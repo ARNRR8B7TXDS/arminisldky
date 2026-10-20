@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>armin</title>
+<meta name="description" content="رزرو بلیط هواپیما، تورهای داخلی و خارجی و تجربه‌ای متفاوت از سفر.">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="plane" viewBox="0 0 24 24"><path d="M21 15l-8-5V4a1 1 0 00-2 0v6l-8 5v2l8-2v4l-2 1.5V22l3-1 3 1v-1.5L13 19v-4l8 2z"/></symbol>
+  <symbol id="i1" viewBox="0 0 24 24"><path d="M21 15l-8-5V4a1 1 0 00-2 0v6l-8 5v2l8-2v4l-2 1.5V22l3-1 3 1v-1.5L13 19v-4l8 2z"/></symbol>
+  <symbol id="i2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></symbol>
+  <symbol id="i3" viewBox="0 0 24 24"><path d="M3 18V7M3 14h18v4M21 14v-2a3 3 0 00-3-3h-7v5"/></symbol>
+  <symbol id="i4" viewBox="0 0 24 24"><path d="M7 3h8l4 4v14H7zM15 3v4h4M10 12h6M10 16h6"/></symbol>
+  <symbol id="i5" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></symbol>
+  <symbol id="i6" viewBox="0 0 24 24"><path d="M5 16l1.5-5h11L19 16M4 16h16v3H4zM7 19v1M17 19v1"/></symbol>
+</svg>
+
+<nav id="nav">
+  <div class="bar">
+    <a href="#" class="logo"><svg><use href="#plane"/></svg><span>پرواز آبی</span></a>
+    <div class="links">
+      <a href="#">صفحه اصلی</a><a href="#search">بلیط هواپیما</a><a href="#tours">تورها</a>
+      <a href="#dest">مقاصد</a><a href="#services">خدمات</a><a href="#about">درباره ما</a>
+    </div>
+    <div class="act">
+      <a href="#" class="lg">ورود / ثبت‌نام</a>
+      <a href="#search" class="btn p">رزرو بلیط</a>
+      <button class="burger" id="bg" aria-label="منو">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <!-- ویدیوی خودتان را با نام hero.mp4 کنار این فایل بگذارید -->
+  <div class="cl a"></div><div class="cl b"></div>
+<video autoplay muted loop playsinline preload="auto" poster="اقیانوس ابرها زیر آسمان آبی.png"></video>
+  <div class="in">
+    <h1>سفر بعدی شما، از اینجا آغاز می‌شود</h1>
+    <p>بلیط هواپیما، تورهای داخلی و خارجی و تجربه‌ای متفاوت از سفر را با ما تجربه کنید.</p>
+    <a href="#search" class="btn p">رزرو بلیط</a><a href="#dest" class="btn g">کشف مقاصد</a>
+  </div>
+</header>
+
+<section class="search" id="search">
+  <div class="wrap">
+    <form class="sf" onsubmit="return false">
+      <div class="pair">
+        <div class="f"><label>مبدا</label><input id="o" value="تهران" placeholder="شهر مبدا"></div>
+        <button type="button" class="sw" id="sw" aria-label="جابه‌جایی">⇄</button>
+        <div class="f"><label>مقصد</label><input id="t" value="استانبول" placeholder="شهر مقصد"></div>
+      </div>
+      <div class="f"><label>تاریخ رفت</label><input type="date"></div>
+      <div class="f"><label>تاریخ برگشت</label><input type="date"></div>
+      <div class="f"><label>مسافران</label><select><option>۱ بزرگسال</option><option>۲ بزرگسال</option><option>۳ بزرگسال</option><option>۴ بزرگسال</option></select></div>
+      <div class="f"><label>کلاس پروازی</label><select><option>اکونومی</option><option>پریمیوم</option><option>بیزینس</option><option>فرست</option></select></div>
+      <button class="btn p">جستجوی پرواز</button>
+    </form>
+  </div>
+</section>
+
+<section id="dest">
+  <div class="wrap">
+    <div class="rv"><h2>مقصد بعدی شما کجاست؟</h2>
+    <p class="lead">از شهرهای پرهیجان دنیا تا آرام‌ترین سواحل، مقصد مورد علاقه‌تان را پیدا کنید.</p></div>
+    <div class="dg">
+      <a href="#" class="d rv" style="--img:url(istanbul.jpg);--g:linear-gradient(160deg,#44469FE8,#9ADBFF)"><small>ترکیه</small><h3>استانبول</h3><span class="pr">از ۱۲,۵۰۰,۰۰۰ تومان</span><span class="go">مشاهده مقصد</span></a>
+      <a href="#" class="d rv" style="--img:url(dubai.jpg);--g:linear-gradient(160deg,#62C4FF,#E8F7FF)"><small>امارات</small><h3>دبی</h3><span class="pr">از ۱۴,۸۰۰,۰۰۰ تومان</span><span class="go">مشاهده مقصد</span></a>
+      <a href="#" class="d rv" style="--img:url(paris.jpg);--g:linear-gradient(160deg,#172B3A,#269FE8)"><small>فرانسه</small><h3>پاریس</h3><span class="pr">از ۳۸,۰۰۰,۰۰۰ تومان</span><span class="go">مشاهده مقصد</span></a>
+      <a href="#" class="d rv" style="--img:url(london.jpg);--g:linear-gradient(160deg,#667784,#9ADBFF)"><small>بریتانیا</small><h3>لندن</h3><span class="pr">از ۴۲,۰۰۰,۰۰۰ تومان</span><span class="go">مشاهده مقصد</span></a>
+      <a href="#" class="d rv" style="--img:url(maldives.jpg);--g:linear-gradient(160deg,#62C4FF,#269FE8)"><small>مالدیو</small><h3>مالدیو</h3><span class="pr">از ۴۹,۹۰۰,۰۰۰ تومان</span><span class="go">مشاهده مقصد</span></a>
+      <a href="#" class="d rv" style="--img:url(tokyo.jpg);--g:linear-gradient(160deg,#269FE8,#172B3A)"><small>ژاپن</small><h3>توکیو</h3><span class="pr">از ۵۸,۰۰۰,۰۰۰ تومان</span><span class="go">مشاهده مقصد</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="padding-top:20px">
+  <div class="wrap">
+    <h2 class="rv">همه چیز برای یک سفر بی‌دغدغه</h2>
+    <div class="sv">
+      <div class="rv"><svg><use href="#i1"/></svg><h3>رزرو بلیط هواپیما</h3><p>پرواز داخلی و خارجی با بهترین قیمت.</p></div>
+      <div class="rv"><svg><use href="#i2"/></svg><h3>تورهای مسافرتی</h3><p>تورهای آماده و اختصاصی برای هر سلیقه.</p></div>
+      <div class="rv"><svg><use href="#i3"/></svg><h3>رزرو هتل</h3><p>اقامت مطمئن در بهترین هتل‌های دنیا.</p></div>
+      <div class="rv"><svg><use href="#i4"/></svg><h3>خدمات ویزا</h3><p>راهنمایی و پیگیری کامل مراحل اخذ ویزا.</p></div>
+      <div class="rv"><svg><use href="#i5"/></svg><h3>بیمه مسافرتی</h3><p>سفری با خیال راحت و پوشش کامل.</p></div>
+      <div class="rv"><svg><use href="#i6"/></svg><h3>ترانسفر فرودگاهی</h3><p>رفت‌وآمد راحت از درب منزل تا فرودگاه.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="about">
+  <div class="wrap">
+    <h2 class="rv">سفر، وقتی بهتر است که خیالتان راحت باشد</h2>
+    <div class="wg">
+      <div class="rv"><h3>قیمت‌های رقابتی</h3><p>مقایسه لحظه‌ای نرخ‌ها برای بهترین انتخاب.</p></div>
+      <div class="rv"><h3>رزرو سریع و آسان</h3><p>در چند دقیقه و بدون پیچیدگی بلیط بگیرید.</p></div>
+      <div class="rv"><h3>پشتیبانی ۲۴ ساعته</h3><p>همیشه و در هر ساعت کنار شما هستیم.</p></div>
+      <div class="rv"><h3>پرداخت امن</h3><p>درگاه‌های معتبر و اطلاعات محافظت‌شده.</p></div>
+      <div class="rv"><h3>همکاری با ایرلاین‌های معتبر</h3><p>ارتباط مستقیم با شرکت‌های هوایی برتر.</p></div>
+      <div class="rv"><h3>خدمات پس از فروش</h3><p>تغییر، استرداد و پیگیری تا پایان سفر.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap ex">
+   <div class="im rv" style="--img:url(experience.png)"></div>
+    <div class="rv">
+      <h2>بیشتر از یک بلیط، یک تجربه</h2>
+      <p>ما فقط بلیط نمی‌فروشیم. از اولین جستجو تا لحظه‌ی بازگشت، پرواز، اقامت، ویزا و جابه‌جایی را یکجا و بدون دردسر برایتان هماهنگ می‌کنیم تا فقط از سفر لذت ببرید.</p>
+      <a href="#services" class="btn o">مشاهده خدمات</a>
+    </div>
+  </div>
+</section>
+
+<div class="al"><div class="tr" id="tr">
+  <span>Emirates</span><span>Qatar Airways</span><span>Turkish Airlines</span><span>Lufthansa</span><span>Air France</span><span>Singapore Airlines</span>
+</div></div>
+
+<section id="tours">
+  <div class="wrap">
+    <h2 class="rv">تورهای ویژه</h2>
+    <div class="pg">
+      <div class="pk rv"><div class="im" style="--img:url(images/maldives.jpg);--g:linear-gradient(160deg,#62C4FF,#269FE8)"></div><div class="bd"><span class="rt">★ ۴.۹</span><h3>تور رویایی مالدیو</h3><p>۷ شب و ۸ روز · ویلای روی آب، ۵ ستاره</p><div class="ft"><b>از ۴۹,۹۰۰,۰۰۰ تومان</b><a href="#" class="btn o" style="padding:8px 18px">مشاهده تور</a></div></div></div>
+      <div class="pk rv"><div class="im" style="--img:url(images/istanbul.jpg);--g:linear-gradient(160deg,#269FE8,#9ADBFF)"></div><div class="bd"><span class="rt">★ ۴.۸</span><h3>تور استانبول کلاسیک</h3><p>۵ شب و ۶ روز · هتل ۵ ستاره، مرکز شهر</p><div class="ft"><b>از ۱۸,۵۰۰,۰۰۰ تومان</b><a href="#" class="btn o" style="padding:8px 18px">مشاهده تور</a></div></div></div>
+      <div class="pk rv"><div class="im" style="--img:url(images/dubai.jpg);--g:linear-gradient(160deg,#62C4FF,#E8F7FF)"></div><div class="bd"><span class="rt">★ ۴.۷</span><h3>تور لوکس دبی</h3><p>۴ شب و ۵ روز · هتل ۵ ستاره، نمای دریا</p><div class="ft"><b>از ۲۴,۹۰۰,۰۰۰ تومان</b><a href="#" class="btn o" style="padding:8px 18px">مشاهده تور</a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="rv">مسافرانی که به ما اعتماد کردند</h2>
+    <div class="tg">
+      <div class="rv"><div class="u"><div class="av">س</div><div><b>سارا محمدی</b><br><small>سفر به استانبول</small></div></div><div class="st">★★★★★</div><p>رزرو خیلی سریع انجام شد و پشتیبانی تا آخر سفر پاسخگو بود. حتماً دوباره سفر می‌کنم.</p></div>
+      <div class="rv"><div class="u"><div class="av">ع</div><div><b>علی رضایی</b><br><small>سفر به دبی</small></div></div><div class="st">★★★★★</div><p>قیمت‌ها از جاهای دیگر بهتر بود و همه‌چیز دقیقاً طبق قول‌شان انجام شد.</p></div>
+      <div class="rv"><div class="u"><div class="av">م</div><div><b>مریم کاظمی</b><br><small>تور مالدیو</small></div></div><div class="st">★★★★★</div><p>تور مالدیو بی‌نقص برنامه‌ریزی شده بود. بهترین سفر زندگی‌ام بود.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sa">
+  <div class="wrap sg">
+    <div class="rv"><b data-n="250000">۰</b><span>مسافر راضی</span></div>
+    <div class="rv"><b data-n="120">۰</b><span>مقصد گردشگری</span></div>
+    <div class="rv"><b data-n="500">۰</b><span>مسیر پروازی</span></div>
+    <div class="rv"><b data-n="15">۰</b><span>سال تجربه</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="rv">الهام‌بخش سفر بعدی شما</h2>
+    <div class="bg">
+      <a href="#" class="rv"><div class="im" style="--img:url(images/b1.jpg);--g:linear-gradient(160deg,#269FE8,#9ADBFF)"></div><small>۵ دقیقه مطالعه</small><h3>بهترین زمان سفر به استانبول</h3></a>
+      <a href="#" class="rv"><div class="im" style="--img:url(images/b2.jpg);--g:linear-gradient(160deg,#62C4FF,#E8F7FF)"></div><small>۷ دقیقه مطالعه</small><h3>راهنمای سفر به دبی</h3></a>
+      <a href="#" class="rv"><div class="im" style="--img:url(images/b3.jpg);--g:linear-gradient(160deg,#172B3A,#62C4FF)"></div><small>۶ دقیقه مطالعه</small><h3>۱۰ مقصد رویایی برای سفر</h3></a>
+      <a href="#" class="rv"><div class="im" style="--img:url(images/b4.jpg);--g:linear-gradient(160deg,#667784,#E8F7FF)"></div><small>۴ دقیقه مطالعه</small><h3>نکات مهم قبل از پرواز</h3></a>
+    </div>
+  </div>
+</section>
+
+<section class="nl">
+  <div class="cl a"></div><div class="cl b"></div>
+  <div class="wrap rv">
+    <h2>مقصد بعدی‌تان را از دست ندهید</h2>
+    <p>با عضویت در خبرنامه، از جدیدترین پیشنهادهای سفر و قیمت‌های ویژه باخبر شوید.</p>
+    <form class="nf" onsubmit="return false"><input type="email" placeholder="آدرس ایمیل شما"><button class="btn p">عضویت</button></form>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="rv" style="text-align:center">سوالات متداول</h2>
+    <div class="fq rv">
+      <details><summary>چگونه بلیط هواپیما رزرو کنم؟</summary><p>مبدا، مقصد و تاریخ را در فرم جستجو وارد کنید، پرواز مورد نظر را انتخاب و پرداخت را انجام دهید. بلیط به ایمیل شما ارسال می‌شود.</p></details>
+      <details><summary>امکان استرداد بلیط وجود دارد؟</summary><p>بله، بسته به قوانین ایرلاین و نوع بلیط، امکان استرداد با کسر جریمه وجود دارد.</p></details>
+      <details><summary>میزان بار مجاز پرواز چقدر است؟</summary><p>میزان بار مجاز به ایرلاین و کلاس پروازی بستگی دارد و در جزئیات هر بلیط درج شده است.</p></details>
+      <details><summary>چگونه می‌توانم تور رزرو کنم؟</summary><p>از بخش تورها، تور مورد نظر را انتخاب کنید و درخواست رزرو بدهید. کارشناسان ما با شما تماس می‌گیرند.</p></details>
+      <details><summary>آیا امکان پرداخت آنلاین وجود دارد؟</summary><p>بله، پرداخت با درگاه‌های امن بانکی به‌صورت آنلاین انجام می‌شود.</p></details>
+      <details><summary>پشتیبانی در چه ساعاتی فعال است؟</summary><p>پشتیبانی ما به‌صورت ۲۴ ساعته و در تمام روزهای هفته در دسترس است.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div><a href="#" class="logo" style="opacity:1;font-size:24px"><svg style="width:26px;height:26px;fill:currentColor"><use href="#plane"/></svg><span>پرواز آبی</span></a><p style="margin-top:10px;max-width:280px;opacity:.75">شروع هر سفر از اینجاست.</p></div>
+      <div><h4>شرکت</h4><a href="#about">درباره ما</a><a href="#">تماس با ما</a><a href="#">سوالات متداول</a></div>
+      <div><h4>خدمات</h4><a href="#services">خدمات</a><a href="#dest">مقاصد</a><a href="#tours">تورها</a></div>
+      <div><h4>شبکه‌های اجتماعی</h4><a href="#">اینستاگرام</a><a href="#">تلگرام</a><a href="#">واتساپ</a></div>
+    </div>
+    <div class="cp"><span>تمامی حقوق این وب‌سایت محفوظ است.</span></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
